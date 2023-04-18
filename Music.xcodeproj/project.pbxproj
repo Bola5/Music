@@ -12,6 +12,9 @@
 		83A8477129EEE1210016833C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8477029EEE1210016833C /* MusicViewController.swift */; };
 		83A8477629EEE1230016833C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A8477529EEE1230016833C /* Assets.xcassets */; };
 		83A8477929EEE1230016833C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A8477729EEE1230016833C /* LaunchScreen.storyboard */; };
+		83A8478529EEE2C90016833C /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478429EEE2C90016833C /* CommunicationManager.swift */; };
+		83A8478829EEE6A70016833C /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */; };
+		83A8478A29EEE8AF0016833C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478929EEE8AF0016833C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		83A8477529EEE1230016833C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A8477829EEE1230016833C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83A8477A29EEE1230016833C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A8478429EEE2C90016833C /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+		83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		83A8478929EEE8AF0016833C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,55 @@
 			children = (
 				83A8476C29EEE1210016833C /* AppDelegate.swift */,
 				83A8476E29EEE1210016833C /* SceneDelegate.swift */,
-				83A8477029EEE1210016833C /* MusicViewController.swift */,
 				83A8477529EEE1230016833C /* Assets.xcassets */,
 				83A8477729EEE1230016833C /* LaunchScreen.storyboard */,
 				83A8477A29EEE1230016833C /* Info.plist */,
+				83A8478129EEE2510016833C /* Presentation */,
+				83A8478229EEE25A0016833C /* Business Logic */,
+				83A8478029EEE23F0016833C /* Core */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		83A8478029EEE23F0016833C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				83A8478629EEE56F0016833C /* AUX */,
+				83A8478329EEE2B80016833C /* Communication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		83A8478129EEE2510016833C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83A8477029EEE1210016833C /* MusicViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		83A8478229EEE25A0016833C /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		83A8478329EEE2B80016833C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				83A8478429EEE2C90016833C /* CommunicationManager.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		83A8478629EEE56F0016833C /* AUX */ = {
+			isa = PBXGroup;
+			children = (
+				83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */,
+				83A8478929EEE8AF0016833C /* Extensions.swift */,
+			);
+			path = AUX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A8477129EEE1210016833C /* MusicViewController.swift in Sources */,
+				83A8478A29EEE8AF0016833C /* Extensions.swift in Sources */,
 				83A8476D29EEE1210016833C /* AppDelegate.swift in Sources */,
+				83A8478529EEE2C90016833C /* CommunicationManager.swift in Sources */,
 				83A8476F29EEE1210016833C /* SceneDelegate.swift in Sources */,
+				83A8478829EEE6A70016833C /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +331,7 @@
 				INFOPLIST_FILE = Music/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +358,7 @@
 				INFOPLIST_FILE = Music/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
