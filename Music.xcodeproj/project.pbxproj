@@ -15,6 +15,9 @@
 		83A8478529EEE2C90016833C /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478429EEE2C90016833C /* CommunicationManager.swift */; };
 		83A8478829EEE6A70016833C /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */; };
 		83A8478A29EEE8AF0016833C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478929EEE8AF0016833C /* Extensions.swift */; };
+		83A8478D29EEEB120016833C /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478C29EEEB120016833C /* MusicModel.swift */; };
+		83A8478F29EF28080016833C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478E29EF28080016833C /* Constants.swift */; };
+		83A8479229EF28DC0016833C /* MusicRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		83A8478429EEE2C90016833C /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
 		83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		83A8478929EEE8AF0016833C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		83A8478C29EEEB120016833C /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		83A8478E29EF28080016833C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRemoteDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 		83A8478229EEE25A0016833C /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
+				83A8479029EF28B90016833C /* DataSources */,
+				83A8478B29EEEAED0016833C /* Models */,
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
@@ -109,8 +117,25 @@
 			children = (
 				83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */,
 				83A8478929EEE8AF0016833C /* Extensions.swift */,
+				83A8478E29EF28080016833C /* Constants.swift */,
 			);
 			path = AUX;
+			sourceTree = "<group>";
+		};
+		83A8478B29EEEAED0016833C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83A8478C29EEEB120016833C /* MusicModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83A8479029EF28B90016833C /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A8477129EEE1210016833C /* MusicViewController.swift in Sources */,
+				83A8478D29EEEB120016833C /* MusicModel.swift in Sources */,
 				83A8478A29EEE8AF0016833C /* Extensions.swift in Sources */,
 				83A8476D29EEE1210016833C /* AppDelegate.swift in Sources */,
+				83A8479229EF28DC0016833C /* MusicRemoteDataSource.swift in Sources */,
 				83A8478529EEE2C90016833C /* CommunicationManager.swift in Sources */,
 				83A8476F29EEE1210016833C /* SceneDelegate.swift in Sources */,
 				83A8478829EEE6A70016833C /* ActivityIndicatorView.swift in Sources */,
+				83A8478F29EF28080016833C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
