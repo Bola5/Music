@@ -18,6 +18,8 @@
 		83A8478D29EEEB120016833C /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478C29EEEB120016833C /* MusicModel.swift */; };
 		83A8478F29EF28080016833C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8478E29EF28080016833C /* Constants.swift */; };
 		83A8479229EF28DC0016833C /* MusicRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */; };
+		83A8479629EF35690016833C /* MusicLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479529EF35690016833C /* MusicLayoutViewModel.swift */; };
+		83A8479829EF38970016833C /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479729EF38970016833C /* MusicViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		83A8478C29EEEB120016833C /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		83A8478E29EF28080016833C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRemoteDataSource.swift; sourceTree = "<group>"; };
+		83A8479529EF35690016833C /* MusicLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLayoutViewModel.swift; sourceTree = "<group>"; };
+		83A8479729EF38970016833C /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,9 @@
 		83A8478229EEE25A0016833C /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
-				83A8479029EF28B90016833C /* DataSources */,
-				83A8478B29EEEAED0016833C /* Models */,
+				83A8479429EF35530016833C /* ViewModel */,
+				83A8479029EF28B90016833C /* DataSource */,
+				83A8478B29EEEAED0016833C /* Model */,
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
@@ -122,20 +127,29 @@
 			path = AUX;
 			sourceTree = "<group>";
 		};
-		83A8478B29EEEAED0016833C /* Models */ = {
+		83A8478B29EEEAED0016833C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				83A8478C29EEEB120016833C /* MusicModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		83A8479029EF28B90016833C /* DataSources */ = {
+		83A8479029EF28B90016833C /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
 				83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */,
 			);
-			path = DataSources;
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		83A8479429EF35530016833C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83A8479529EF35690016833C /* MusicLayoutViewModel.swift */,
+				83A8479729EF38970016833C /* MusicViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +228,10 @@
 				83A8476D29EEE1210016833C /* AppDelegate.swift in Sources */,
 				83A8479229EF28DC0016833C /* MusicRemoteDataSource.swift in Sources */,
 				83A8478529EEE2C90016833C /* CommunicationManager.swift in Sources */,
+				83A8479629EF35690016833C /* MusicLayoutViewModel.swift in Sources */,
 				83A8476F29EEE1210016833C /* SceneDelegate.swift in Sources */,
 				83A8478829EEE6A70016833C /* ActivityIndicatorView.swift in Sources */,
+				83A8479829EF38970016833C /* MusicViewModel.swift in Sources */,
 				83A8478F29EF28080016833C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
