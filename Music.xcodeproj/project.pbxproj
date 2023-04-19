@@ -126,7 +126,7 @@
 		83A8478129EEE2510016833C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				83A8479929EFDE730016833C /* Cells */,
+				83A8479929EFDE730016833C /* Cell */,
 				83A8477029EEE1210016833C /* MusicViewController.swift */,
 			);
 			path = Presentation;
@@ -187,12 +187,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		83A8479929EFDE730016833C /* Cells */ = {
+		83A8479929EFDE730016833C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				83A8479A29EFDE880016833C /* MusicTableViewCell.swift */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		83A847A729F00C9A0016833C /* MusicTests */ = {
