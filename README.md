@@ -27,7 +27,7 @@ The project with MVVM structure
 [Diagram](https://lucid.app/lucidchart/2f79dd1b-cd4c-4f80-b303-ab64ef619f95/edit?viewport_loc=-11%2C-11%2C2048%2C1203%2C0_0&invitationId=inv_81b6f980-83f1-41b3-903a-1530b7335265#)
 
 ## Video record for the app in run time
-[Video]()
+[Video](https://www.mediafire.com/file/i4t1jsdug04xzvt/Simulator+Screen+Recording+-+iPhone+14+-+2023-04-19+at+15.00.38.mp4/file)
 
 ## Version
 1.0
