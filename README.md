@@ -12,7 +12,13 @@
 3. Each result item should display the music track "TrackName", "artWork", "artistName", "Description" and "ReleaseDate".
 
 ## Description "PR description"
-
+- The response from the API comes with all of the data except the description not come with the payload when I search using media=music, so as I mentioned before I will use collectionName instead of description.
+- No storyboards or Xibs files.
+- Building the music list with a search bar to allow the user to search for songs and display them in the tableView.
+- Every cell contains all of the details beside the info button to display the description in an alert.
+- Adding pagination to get all of the music.
+- Adding the scroll to top button to help the user to move to the top when he scrolls in the tableView.
+- Adding unit tests.
 
 ## Project Structure (MVVM)
 The project with MVVM structure
