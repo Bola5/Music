@@ -23,7 +23,7 @@
 ## Project Structure (MVVM)
 The project with MVVM structure
 - Models - for parsing the response on it
-- DataSources(Remote and Local) - for fetch the data from network or database
+- DataSources(Remote) - for fetch the data from network
 - LayoutViewModels - for the map from models to be ready to use for the UI
 - ViewModels - for handle the business logic
 - ViewContoller - for the present the data into the UI controllers
