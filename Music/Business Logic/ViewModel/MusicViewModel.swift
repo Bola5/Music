@@ -27,6 +27,7 @@ class MusicViewModel: MusicViewModelProtocol {
     // MARK: - Properties
     private var limit: Int = 20
     private var nextPage: Int = 1
+    private let maximumCountForMusics = 200
     // Data Source
     private let musicRemoteDataSource: MusicRemoteDataSourceProtocol
     private var layoutViewModel: MusicLayoutViewModel?
@@ -34,7 +35,7 @@ class MusicViewModel: MusicViewModelProtocol {
         return layoutViewModel?.results.count ?? 0
     }
     var isLastPage: Bool {
-        return countOfMusics == 200
+        return countOfMusics == maximumCountForMusics
     }
     
     // Init
