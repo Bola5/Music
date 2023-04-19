@@ -11,6 +11,7 @@ protocol MusicViewModelProtocol {
     
     //MARK: - Protocol - Data Source
     var countOfMusics: Int { get }
+    var isLastPage: Bool { get }
     func musicAt(index: Int) -> MusicLayoutViewModel.ResultsLayoutViewModel?
     func shouldFetchNextPage(index: Int) -> Bool
     
@@ -31,6 +32,9 @@ class MusicViewModel: MusicViewModelProtocol {
     private var layoutViewModel: MusicLayoutViewModel?
     var countOfMusics: Int {
         return layoutViewModel?.results.count ?? 0
+    }
+    var isLastPage: Bool {
+        return countOfMusics == 200
     }
     
     // Init
@@ -76,7 +80,7 @@ extension MusicViewModel {
     }
 
     private func updateLimit() {
-        limit += limit
+        limit += 20
     }
     
 }

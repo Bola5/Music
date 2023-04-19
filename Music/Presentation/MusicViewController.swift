@@ -245,7 +245,7 @@ extension MusicViewController: UITableViewDataSource {
 extension MusicViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if viewModel.shouldFetchNextPage(index: indexPath.row) {
+        if viewModel.shouldFetchNextPage(index: indexPath.row), !viewModel.isLastPage {
             self.fetchMusics(term: term ?? "")
         }
     }
