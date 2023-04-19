@@ -7,7 +7,7 @@
 [here](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html#//apple_ref/doc/uid/TP40017632-CH5-SW1)
 
 ## Acceptance Criteria
-1. The user to enter the search string and will show a list of matching results
+1. The user can enter the search string and will show a list of matching results.
 2. The search results must be limited to Denmark.
 3. Each result item should display the music track "TrackName", "artWork", "artistName", "Description" and "ReleaseDate".
 
@@ -17,6 +17,7 @@
 - Building the music list with a search bar to allow the user to search for songs and display them in the tableView.
 - Every cell contains all of the details beside the info button to display the description in an alert.
 - Adding pagination to get all of the music.
+- Handle empty state when no result found.
 - Adding the scroll to top button to help the user to move to the top when he scrolls in the tableView.
 - Adding unit tests.
 
