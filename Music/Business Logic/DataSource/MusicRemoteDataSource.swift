@@ -49,16 +49,16 @@ extension MusicRemoteDataSource {
         var action: Request
                 
         var url: URL? {
-            var urlComponents = URLComponents(string: Strings.URL.BASE_URL)!
+            var urlComponents = URLComponents(string: Constants.URL.BASE_URL)!
             
             switch action {
             case .getMusics(let term, let limit):
-                urlComponents.path.append(Strings.URL.ENDPOINT)
+                urlComponents.path.append(Constants.URL.ENDPOINT)
                 
                 urlComponents.queryItems = [
                     URLQueryItem(name: "term", value: term),
-                    URLQueryItem(name: "media", value: Strings.URL.MEDIA),
-                    URLQueryItem(name: "country", value: Strings.URL.COUNTRY_CODE),
+                    URLQueryItem(name: "media", value: Constants.URL.MEDIA),
+                    URLQueryItem(name: "country", value: Constants.URL.COUNTRY_CODE),
                     URLQueryItem(name: "limit", value: "\(limit)")
                 ]
                 

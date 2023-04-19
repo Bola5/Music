@@ -12,6 +12,7 @@ class ActivityIndicatorView: UIView {
     // MARK: - UI
     private let blurImg = UIImageView()
     private let indicator = UIActivityIndicatorView()
+    private var container: UIView?
     
     // MARK: - Init
     // Cell style
@@ -38,13 +39,16 @@ class ActivityIndicatorView: UIView {
         indicator.startAnimating()
     }
     
+    // MARK: - registerActivityIndicator
+    func registerActivityIndicator(container: UIView) {
+        self.container = container
+    }
+    
     // MARK: - showIndicator
     func showIndicator() {
         DispatchQueue.main.async( execute: {
-            if let keyWindow = UIWindow.key {
-                keyWindow.addSubview(self.blurImg)
-                keyWindow.addSubview(self.indicator)
-            }
+            self.container?.addSubview(self.blurImg)
+            self.container?.addSubview(self.indicator)
         })
     }
     
