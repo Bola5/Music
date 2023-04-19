@@ -23,7 +23,20 @@
 		83A8479B29EFDE880016833C /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479A29EFDE880016833C /* MusicTableViewCell.swift */; };
 		83A8479D29EFE54A0016833C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479C29EFE54A0016833C /* Styles.swift */; };
 		83A8479F29EFEC040016833C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479E29EFEC040016833C /* Enums.swift */; };
+		83A847A929F00C9A0016833C /* MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A847A829F00C9A0016833C /* MusicTests.swift */; };
+		83A847B129F00CD40016833C /* musics.json in Resources */ = {isa = PBXBuildFile; fileRef = 83A847B029F00CD40016833C /* musics.json */; };
+		83A847B329F00D1E0016833C /* MusicAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A847B229F00D1E0016833C /* MusicAPITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83A847AA29F00C9A0016833C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A8476129EEE1210016833C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83A8476829EEE1210016833C;
+			remoteInfo = Music;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		83A8476929EEE1210016833C /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +57,21 @@
 		83A8479A29EFDE880016833C /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		83A8479C29EFE54A0016833C /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		83A8479E29EFEC040016833C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		83A847A629F00C9A0016833C /* MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A847A829F00C9A0016833C /* MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTests.swift; sourceTree = "<group>"; };
+		83A847B029F00CD40016833C /* musics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musics.json; sourceTree = "<group>"; };
+		83A847B229F00D1E0016833C /* MusicAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		83A8476629EEE1210016833C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A847A329F00C9A0016833C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				83A8476B29EEE1210016833C /* Music */,
+				83A847A729F00C9A0016833C /* MusicTests */,
 				83A8476A29EEE1210016833C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				83A8476929EEE1210016833C /* Music.app */,
+				83A847A629F00C9A0016833C /* MusicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +195,24 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		83A847A729F00C9A0016833C /* MusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				83A847AF29F00CA90016833C /* Mock */,
+				83A847A829F00C9A0016833C /* MusicTests.swift */,
+				83A847B229F00D1E0016833C /* MusicAPITests.swift */,
+			);
+			path = MusicTests;
+			sourceTree = "<group>";
+		};
+		83A847AF29F00CA90016833C /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				83A847B029F00CD40016833C /* musics.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +233,24 @@
 			productReference = 83A8476929EEE1210016833C /* Music.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83A847A529F00C9A0016833C /* MusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A847AE29F00C9A0016833C /* Build configuration list for PBXNativeTarget "MusicTests" */;
+			buildPhases = (
+				83A847A229F00C9A0016833C /* Sources */,
+				83A847A329F00C9A0016833C /* Frameworks */,
+				83A847A429F00C9A0016833C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A847AB29F00C9A0016833C /* PBXTargetDependency */,
+			);
+			name = MusicTests;
+			productName = MusicTests;
+			productReference = 83A847A629F00C9A0016833C /* MusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +263,10 @@
 				TargetAttributes = {
 					83A8476829EEE1210016833C = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					83A847A529F00C9A0016833C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 83A8476829EEE1210016833C;
 					};
 				};
 			};
@@ -218,6 +284,7 @@
 			projectRoot = "";
 			targets = (
 				83A8476829EEE1210016833C /* Music */,
+				83A847A529F00C9A0016833C /* MusicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +296,14 @@
 			files = (
 				83A8477929EEE1230016833C /* LaunchScreen.storyboard in Resources */,
 				83A8477629EEE1230016833C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A847A429F00C9A0016833C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A847B129F00CD40016833C /* musics.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +331,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83A847A229F00C9A0016833C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A847B329F00D1E0016833C /* MusicAPITests.swift in Sources */,
+				83A847A929F00C9A0016833C /* MusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83A847AB29F00C9A0016833C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83A8476829EEE1210016833C /* Music */;
+			targetProxy = 83A847AA29F00C9A0016833C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83A8477729EEE1230016833C /* LaunchScreen.storyboard */ = {
@@ -438,6 +530,40 @@
 			};
 			name = Release;
 		};
+		83A847AC29F00C9A0016833C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bola.MusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Music";
+			};
+			name = Debug;
+		};
+		83A847AD29F00C9A0016833C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bola.MusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Music";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +581,15 @@
 			buildConfigurations = (
 				83A8477E29EEE1230016833C /* Debug */,
 				83A8477F29EEE1230016833C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A847AE29F00C9A0016833C /* Build configuration list for PBXNativeTarget "MusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A847AC29F00C9A0016833C /* Debug */,
+				83A847AD29F00C9A0016833C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

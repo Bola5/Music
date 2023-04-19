@@ -90,7 +90,7 @@ class MusicTableViewCell: UITableViewCell {
         trackNameLabel.textColor = Styles.Colors.PRIMARY.value
         trackNameLabel.font = UIFont.boldSystemFont(ofSize: Styles.FontSize.PRIMARY.rawValue)
         NSLayoutConstraint.activate([
-            trackNameLabel.topAnchor.constraint(equalTo: releaseDateLabel.bottomAnchor, constant: 8),
+            trackNameLabel.topAnchor.constraint(equalTo: releaseDateLabel.bottomAnchor, constant: 4),
             trackNameLabel.trailingAnchor.constraint(equalTo: infoButton.leadingAnchor, constant: -8),
             trackNameLabel.leadingAnchor.constraint(equalTo: artworkImageView.trailingAnchor, constant: 8)
         ])
@@ -136,6 +136,7 @@ extension MusicTableViewCell {
         self.trackNameLabel.text = music.trackName ?? ""
         self.releaseDateLabel.text = music.releaseDate?.convertDateFormater()
         self.musicDescription = music.description ?? ""
+        self.infoButton.isHidden = (music.description ?? "") == ""
         self.onActionEvent = onAction
     }
     
