@@ -39,13 +39,31 @@ extension UIImageView {
 
 extension UIViewController {
     
-    func showErrorAlert(message: String, completion: @escaping () -> ()) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Constants.Titles.RETRY_TITLE, style: .default, handler: { action in
-            completion()
+    func showAlert(state: AlertState, message: String, completion: (() -> ())? = nil) {
+        let alert = UIAlertController(title: state == .info ? Constants.Strings.DESCRIPTION : nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: state == .error ? Constants.Titles.RETRY_TITLE : Constants.Titles.OK_TITLE, style: .default, handler: { action in
+            state == .error ? completion?() : nil
         }))
         self.present(alert, animated: true, completion: nil)
     }
     
 }
 
+extension String {
+    
+    func convertDateFormater(fromFormat: String = "yyyy-MM-dd'T'HH:mm:ssZ", toFormat: String = "E, MM/dd") -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = fromFormat
+        let date = dateFormatter.date(from: self)
+        dateFormatter.dateFormat = toFormat
+        return dateFormatter.string(from: date ?? Date())
+    }
+    
+}
+
+extension NSLayoutConstraint {
+    func withPriority(_ priority: Float) -> NSLayoutConstraint {
+        self.priority = UILayoutPriority(priority)
+        return self
+    }
+}

@@ -20,6 +20,9 @@
 		83A8479229EF28DC0016833C /* MusicRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */; };
 		83A8479629EF35690016833C /* MusicLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479529EF35690016833C /* MusicLayoutViewModel.swift */; };
 		83A8479829EF38970016833C /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479729EF38970016833C /* MusicViewModel.swift */; };
+		83A8479B29EFDE880016833C /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479A29EFDE880016833C /* MusicTableViewCell.swift */; };
+		83A8479D29EFE54A0016833C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479C29EFE54A0016833C /* Styles.swift */; };
+		83A8479F29EFEC040016833C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8479E29EFEC040016833C /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		83A8479129EF28DC0016833C /* MusicRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRemoteDataSource.swift; sourceTree = "<group>"; };
 		83A8479529EF35690016833C /* MusicLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLayoutViewModel.swift; sourceTree = "<group>"; };
 		83A8479729EF38970016833C /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		83A8479A29EFDE880016833C /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		83A8479C29EFE54A0016833C /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		83A8479E29EFEC040016833C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		83A8478129EEE2510016833C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				83A8479929EFDE730016833C /* Cells */,
 				83A8477029EEE1210016833C /* MusicViewController.swift */,
 			);
 			path = Presentation;
@@ -123,6 +130,8 @@
 				83A8478729EEE6A70016833C /* ActivityIndicatorView.swift */,
 				83A8478929EEE8AF0016833C /* Extensions.swift */,
 				83A8478E29EF28080016833C /* Constants.swift */,
+				83A8479C29EFE54A0016833C /* Styles.swift */,
+				83A8479E29EFEC040016833C /* Enums.swift */,
 			);
 			path = AUX;
 			sourceTree = "<group>";
@@ -150,6 +159,14 @@
 				83A8479729EF38970016833C /* MusicViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		83A8479929EFDE730016833C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83A8479A29EFDE880016833C /* MusicTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,15 +241,18 @@
 			files = (
 				83A8477129EEE1210016833C /* MusicViewController.swift in Sources */,
 				83A8478D29EEEB120016833C /* MusicModel.swift in Sources */,
+				83A8479D29EFE54A0016833C /* Styles.swift in Sources */,
 				83A8478A29EEE8AF0016833C /* Extensions.swift in Sources */,
 				83A8476D29EEE1210016833C /* AppDelegate.swift in Sources */,
 				83A8479229EF28DC0016833C /* MusicRemoteDataSource.swift in Sources */,
 				83A8478529EEE2C90016833C /* CommunicationManager.swift in Sources */,
 				83A8479629EF35690016833C /* MusicLayoutViewModel.swift in Sources */,
 				83A8476F29EEE1210016833C /* SceneDelegate.swift in Sources */,
+				83A8479F29EFEC040016833C /* Enums.swift in Sources */,
 				83A8478829EEE6A70016833C /* ActivityIndicatorView.swift in Sources */,
 				83A8479829EF38970016833C /* MusicViewModel.swift in Sources */,
 				83A8478F29EF28080016833C /* Constants.swift in Sources */,
+				83A8479B29EFDE880016833C /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

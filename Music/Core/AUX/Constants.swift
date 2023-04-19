@@ -16,7 +16,7 @@ enum Constants {
     }
     
     enum PlaceHolders {
-        static let SEARCH_PLACEHOLDER = "Search for songs, artists..."
+        static let SEARCH_PLACEHOLDER = "Search for songs..."
     }
     
     enum Image {
@@ -32,12 +32,9 @@ enum Constants {
         static let COUNTRY_CODE = "dk"
     }
     
-    enum UI {
-        static let ALPA = 0.1
-        static let CORNER_RADIUS = 28
-        static let SHADOW_OPACITY = 0.12
-        static let SHAWOW_RADIUS = 3.0
-        static let SHADOW_OFFSET = 1.0
-        static let SCROLL_TO_TOP_BUTTON_SIZE = 56
+    enum Strings {
+        static let DESCRIPTION = "Music description"
+        static let EMPTY_TEXT = "No results found"
     }
+    
 }

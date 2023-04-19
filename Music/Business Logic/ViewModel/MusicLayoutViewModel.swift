@@ -27,7 +27,7 @@ struct MusicLayoutViewModel {
             self.trackName = music.trackName
             self.artistName = music.artistName
             self.releaseDate = music.releaseDate
-            self.artworkUrl = music.artworkUrl60
+            self.artworkUrl = music.artworkUrl100
             self.description = music.collectionName
         }
         
